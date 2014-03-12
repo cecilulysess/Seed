@@ -1,0 +1,38 @@
+# Written by MakeHuman 1.0 alpha 8 rc3
+version alpha_8_rc3
+tags man1.mh
+macro Weight 0.411000
+macro Gender 1.000000
+macro Age 0.645000
+macro Height 0.556000
+macro Asian 0.628275
+macro African 0.008725
+macro Caucasian 0.363000
+macro Muscle 1.000000
+macro BodyProportions 0.379000
+gendered BreastFirmness 0.500000
+gendered BreastSize 0.419000
+hair mhair02 f81a4e9a-e3d7-4ecb-bdf0-16d7fd9070a4
+eyelashes Eyelashes01 d533836f-13ad-4836-8b65-051108253cd2
+eyebrows Eyebrow009 55b3b52a-379e-426d-b320-562ed57202b3
+eyes HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6
+clothes shoes02 8887caca-d6fb-4d73-af10-1d4fb740a936
+clothes jeans01 faa58a00-05db-4a53-a3a6-72af1cec2053
+clothes Tshirt01 ea986be3-a9df-48e9-9f73-80a02ec1db61
+clothesHideFaces True
+face head-diamond 0.024000
+face head-age-less-more 0.048000
+face head-angle-in-out 0.048000
+face head-invertedtriangular 0.895000
+torso torso-scale-depth-decr-incr -0.194000
+torso torso-vshape-less-more -0.322000
+torso torso-scale-horiz-decr-incr -0.096000
+torso torso-trans-depth-forward-backward -0.032000
+torso torso-scale-vert-decr-incr 0.016000
+measure neckcirc -0.388000
+skinMaterial skins/young_asian_male/young_asian_male_sweat.mhmat
+material jeans01 faa58a00-05db-4a53-a3a6-72af1cec2053 clothes/jeans01/jeans01_black_satin.mhmat
+material Tshirt01 ea986be3-a9df-48e9-9f73-80a02ec1db61 clothes/tshirt01/materials/white_tshirt.mhmat
+material mhair02 f81a4e9a-e3d7-4ecb-bdf0-16d7fd9070a4 hair/mhair02/materials/male02_black.mhmat
+material HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6 eyes/materials/brown.mhmat
+skeleton basic.json 
