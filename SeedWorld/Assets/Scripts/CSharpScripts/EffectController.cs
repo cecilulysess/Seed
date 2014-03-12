@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EffectController : MonoBehaviour
 {
-	public Generate2DReflection generate2dReflection;
+//	public Generate2DReflection generate2dReflection;
 	public GlowEffectThreshold_26 glowEffect;
 	public MotionBlurEdge motionBlur;
 	public ColorCorrectionEffect colorCorrection;
@@ -12,8 +12,8 @@ public class EffectController : MonoBehaviour
 	{
 		if(QualitySettings.currentLevel < QualityLevel.Good)
 		{
-			if (generate2dReflection)
-				generate2dReflection.enabled = false;
+//			if (generate2dReflection)
+//				generate2dReflection.enabled = false;
 			if (glowEffect)
 				glowEffect.enabled = false;
 			if (motionBlur)	
@@ -23,8 +23,8 @@ public class EffectController : MonoBehaviour
 		}
 		else
 		{
-			if (generate2dReflection)
-				generate2dReflection.enabled = true;
+//			if (generate2dReflection)
+//				generate2dReflection.enabled = true;
 			if (glowEffect)
 				glowEffect.enabled = true;
 			if (motionBlur)

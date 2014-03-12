@@ -178,7 +178,7 @@ function DoTweaks()
 	}
 	if(fps < 20)
 	{
-		if(QualitySettings.currentLevel > QualityLevel.Fastest)
+		if(QualitySettings.GetQualityLevel() > QualityLevel.Fastest)
 			QualitySettings.DecreaseLevel();
 	}
 	else if(fps > highFPS)
