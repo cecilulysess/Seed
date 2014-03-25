@@ -26,7 +26,7 @@ public class PlayerHeadController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		if (target != null) {
 			float roty = cameraController.transform.localEulerAngles.y;
 			if (roty < limitation) roty = limitation;
