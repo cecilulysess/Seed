@@ -1,12 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\OVR\Scripts\OVRPlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CSharpScripts\PlayerHeadController.cs">
     <Files>
-      <File FileName="Assets\OVR\Scripts\OVRCameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\OVR\Scripts\OVRCamera.cs" Line="232" Column="14" />
-      <File FileName="Assets\OVR\Editor\OVRCameraControllerEditor.cs" Line="86" Column="16" />
-      <File FileName="Assets\OVR\Scripts\OVRMainMenu.cs" Line="114" Column="20" />
-      <File FileName="Assets\OVR\Scripts\OVRPlayerController.cs" Line="68" Column="26" />
+      <File FileName="Assets\Scripts\JavaScripts\PerformanceTweak.js" Line="190" Column="1" />
+      <File FileName="Assets\Scripts\CSharpScripts\PlayerHeadController.cs" Line="29" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
