@@ -68,6 +68,8 @@ public class OVRCamera : OVRComponent
 	// This will allow multiple OVRCameraControllers to eventually be uused in a scene, and 
 	// only one orientation will be used to syncronize all camera orientation
 	static private Quaternion CameraOrientation = Quaternion.identity;
+
+	public GameObject TrackingAvatar;
 	#endregion
 	
 	#region Monobehaviour Member Functions	
@@ -105,7 +107,9 @@ public class OVRCamera : OVRComponent
 		
 		if(CameraController == null)
 			Debug.LogWarning("WARNING: OVRCameraController not found!");
-		
+
+		// 
+
 		// Set CameraTextureScale (increases the size of the texture we are rendering into
 		// for a better pixel match when post processing the image through lens distortion)
 		
@@ -287,7 +291,11 @@ public class OVRCamera : OVRComponent
 		// Update camera position (first add Offset to parent transform)
 		camera.transform.position = 
 		camera.transform.parent.transform.position + NeckPosition;
-	
+
+//		if (TrackingAvatar != null) {
+//			camera.transform.position = TrackingAvatar.transform.position + NeckPosition;
+//		}
+
 		// Adjust neck by taking eye position and transforming through q
 		camera.transform.position += q * EyePosition;		
 	}

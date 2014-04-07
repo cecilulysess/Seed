@@ -1,0 +1,2429 @@
+fileFormatVersion: 2
+guid: b603e0488ce2a1540a5c4f30e175c69b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: chest
+    100002: chest-1
+    100004: clavicle_L
+    100006: clavicle_R
+    100008: CustomShapes
+    100010: deltoid_L
+    100012: deltoid_R
+    100014: eye_L
+    100016: eye_R
+    100018: f_index_01_L
+    100020: f_index_01_R
+    100022: f_index_02_L
+    100024: f_index_02_R
+    100026: f_index_03_L
+    100028: f_index_03_R
+    100030: f_middle_01_L
+    100032: f_middle_01_R
+    100034: f_middle_02_L
+    100036: f_middle_02_R
+    100038: f_middle_03_L
+    100040: f_middle_03_R
+    100042: f_pinky_01_L
+    100044: f_pinky_01_R
+    100046: f_pinky_02_L
+    100048: f_pinky_02_R
+    100050: f_pinky_03_L
+    100052: f_pinky_03_R
+    100054: f_ring_01_L
+    100056: f_ring_01_R
+    100058: f_ring_02_L
+    100060: f_ring_02_R
+    100062: f_ring_03_L
+    100064: f_ring_03_R
+    100066: foot_L
+    100068: foot_R
+    100070: forearm_L
+    100072: forearm_R
+    100074: GZM_Ball025
+    100076: GZM_Breast_L
+    100078: GZM_Breast_R
+    100080: GZM_Circle025
+    100082: GZM_CircleChest
+    100084: GZM_CircleHips
+    100086: GZM_CircleSpine
+    100088: GZM_CrownHips
+    100090: GZM_Cube025
+    100092: GZM_FaceHead
+    100094: GZM_FaceJaw
+    100096: GZM_Foot
+    100098: GZM_FootIK
+    100100: GZM_Gaze
+    100102: GZM_Hand
+    100104: GZM_HandIK
+    100106: GZM_Head
+    100108: GZM_Jaw
+    100110: GZM_Knuckle
+    100112: GZM_LoLid
+    100114: GZM_Master
+    100116: GZM_Neck
+    100118: GZM_RevFoot
+    100120: GZM_RevToe
+    100122: GZM_Root
+    100124: GZM_Shoulder
+    100126: GZM_Toe
+    100128: GZM_Tongue
+    100130: GZM_UpLid
+    100132: hand_L
+    100134: hand_L_001
+    100136: hand_R
+    100138: hand_R_001
+    100140: head
+    100142: hips
+    100144: jaw
+    100146: lolid_L
+    100148: lolid_R
+    100150: man1
+    100152: man1_Eyebrow009
+    100154: man1_Eyelashes01
+    100156: man1_HighPolyEyes
+    100158: man1_jeans01
+    100160: man1_mhair02
+    100162: man1_Tshirt01
+    100164: man1Body
+    100166: //RootNode
+    100168: neck
+    100170: palm_index_L
+    100172: palm_index_R
+    100174: palm_middle_L
+    100176: palm_middle_R
+    100178: palm_pinky_L
+    100180: palm_pinky_R
+    100182: palm_ring_L
+    100184: palm_ring_R
+    100186: shin_L
+    100188: shin_L_002
+    100190: shin_R
+    100192: shin_R_001
+    100194: spine
+    100196: spine-1
+    100198: thigh_L
+    100200: thigh_R
+    100202: thumb_01_L
+    100204: thumb_01_R
+    100206: thumb_02_L
+    100208: thumb_02_R
+    100210: thumb_03_L
+    100212: thumb_03_R
+    100214: toe_L
+    100216: toe_R
+    100218: tongue_base
+    100220: tongue_mid
+    100222: tongue_tip
+    100224: uplid_L
+    100226: uplid_R
+    100228: upper_arm_L
+    100230: upper_arm_R
+    400000: chest
+    400002: chest-1
+    400004: clavicle_L
+    400006: clavicle_R
+    400008: CustomShapes
+    400010: deltoid_L
+    400012: deltoid_R
+    400014: eye_L
+    400016: eye_R
+    400018: f_index_01_L
+    400020: f_index_01_R
+    400022: f_index_02_L
+    400024: f_index_02_R
+    400026: f_index_03_L
+    400028: f_index_03_R
+    400030: f_middle_01_L
+    400032: f_middle_01_R
+    400034: f_middle_02_L
+    400036: f_middle_02_R
+    400038: f_middle_03_L
+    400040: f_middle_03_R
+    400042: f_pinky_01_L
+    400044: f_pinky_01_R
+    400046: f_pinky_02_L
+    400048: f_pinky_02_R
+    400050: f_pinky_03_L
+    400052: f_pinky_03_R
+    400054: f_ring_01_L
+    400056: f_ring_01_R
+    400058: f_ring_02_L
+    400060: f_ring_02_R
+    400062: f_ring_03_L
+    400064: f_ring_03_R
+    400066: foot_L
+    400068: foot_R
+    400070: forearm_L
+    400072: forearm_R
+    400074: GZM_Ball025
+    400076: GZM_Breast_L
+    400078: GZM_Breast_R
+    400080: GZM_Circle025
+    400082: GZM_CircleChest
+    400084: GZM_CircleHips
+    400086: GZM_CircleSpine
+    400088: GZM_CrownHips
+    400090: GZM_Cube025
+    400092: GZM_FaceHead
+    400094: GZM_FaceJaw
+    400096: GZM_Foot
+    400098: GZM_FootIK
+    400100: GZM_Gaze
+    400102: GZM_Hand
+    400104: GZM_HandIK
+    400106: GZM_Head
+    400108: GZM_Jaw
+    400110: GZM_Knuckle
+    400112: GZM_LoLid
+    400114: GZM_Master
+    400116: GZM_Neck
+    400118: GZM_RevFoot
+    400120: GZM_RevToe
+    400122: GZM_Root
+    400124: GZM_Shoulder
+    400126: GZM_Toe
+    400128: GZM_Tongue
+    400130: GZM_UpLid
+    400132: hand_L
+    400134: hand_L_001
+    400136: hand_R
+    400138: hand_R_001
+    400140: head
+    400142: hips
+    400144: jaw
+    400146: lolid_L
+    400148: lolid_R
+    400150: man1
+    400152: man1_Eyebrow009
+    400154: man1_Eyelashes01
+    400156: man1_HighPolyEyes
+    400158: man1_jeans01
+    400160: man1_mhair02
+    400162: man1_Tshirt01
+    400164: man1Body
+    400166: //RootNode
+    400168: neck
+    400170: palm_index_L
+    400172: palm_index_R
+    400174: palm_middle_L
+    400176: palm_middle_R
+    400178: palm_pinky_L
+    400180: palm_pinky_R
+    400182: palm_ring_L
+    400184: palm_ring_R
+    400186: shin_L
+    400188: shin_L_002
+    400190: shin_R
+    400192: shin_R_001
+    400194: spine
+    400196: spine-1
+    400198: thigh_L
+    400200: thigh_R
+    400202: thumb_01_L
+    400204: thumb_01_R
+    400206: thumb_02_L
+    400208: thumb_02_R
+    400210: thumb_03_L
+    400212: thumb_03_R
+    400214: toe_L
+    400216: toe_R
+    400218: tongue_base
+    400220: tongue_mid
+    400222: tongue_tip
+    400224: uplid_L
+    400226: uplid_R
+    400228: upper_arm_L
+    400230: upper_arm_R
+    2300000: GZM_Ball025
+    2300002: GZM_Breast_L
+    2300004: GZM_Breast_R
+    2300006: GZM_Circle025
+    2300008: GZM_CircleChest
+    2300010: GZM_CircleHips
+    2300012: GZM_CircleSpine
+    2300014: GZM_CrownHips
+    2300016: GZM_Cube025
+    2300018: GZM_FaceHead
+    2300020: GZM_FaceJaw
+    2300022: GZM_Foot
+    2300024: GZM_FootIK
+    2300026: GZM_Gaze
+    2300028: GZM_Hand
+    2300030: GZM_HandIK
+    2300032: GZM_Head
+    2300034: GZM_Jaw
+    2300036: GZM_Knuckle
+    2300038: GZM_LoLid
+    2300040: GZM_Master
+    2300042: GZM_Neck
+    2300044: GZM_RevFoot
+    2300046: GZM_RevToe
+    2300048: GZM_Root
+    2300050: GZM_Shoulder
+    2300052: GZM_Toe
+    2300054: GZM_Tongue
+    2300056: GZM_UpLid
+    3300000: GZM_Ball025
+    3300002: GZM_Breast_L
+    3300004: GZM_Breast_R
+    3300006: GZM_Circle025
+    3300008: GZM_CircleChest
+    3300010: GZM_CircleHips
+    3300012: GZM_CircleSpine
+    3300014: GZM_CrownHips
+    3300016: GZM_Cube025
+    3300018: GZM_FaceHead
+    3300020: GZM_FaceJaw
+    3300022: GZM_Foot
+    3300024: GZM_FootIK
+    3300026: GZM_Gaze
+    3300028: GZM_Hand
+    3300030: GZM_HandIK
+    3300032: GZM_Head
+    3300034: GZM_Jaw
+    3300036: GZM_Knuckle
+    3300038: GZM_LoLid
+    3300040: GZM_Master
+    3300042: GZM_Neck
+    3300044: GZM_RevFoot
+    3300046: GZM_RevToe
+    3300048: GZM_Root
+    3300050: GZM_Shoulder
+    3300052: GZM_Toe
+    3300054: GZM_Tongue
+    3300056: GZM_UpLid
+    4300000: man1_Eyelashes01
+    4300002: man1_Eyebrow009
+    4300004: man1_HighPolyEyes
+    4300006: man1_mhair02
+    4300008: man1_Tshirt01
+    4300010: man1_jeans01
+    4300012: man1Body
+    4300014: GZM_CircleHips
+    4300016: GZM_FaceHead
+    4300020: GZM_LoLid
+    4300022: GZM_Gaze
+    4300026: GZM_Neck
+    4300034: GZM_Breast_R
+    4300040: GZM_UpLid
+    4300044: GZM_Circle025
+    4300046: GZM_HandIK
+    4300048: GZM_Breast_L
+    4300050: GZM_Jaw
+    4300054: GZM_Master
+    4300056: GZM_Ball025
+    4300060: GZM_FootIK
+    4300062: GZM_CircleChest
+    4300064: GZM_FaceJaw
+    4300068: GZM_CircleSpine
+    4300070: GZM_Head
+    7400000: Default Take
+    7400002: Idle
+    7400004: Standby
+    7400006: TakingOff
+    9500000: //RootNode
+    13700000: man1_Eyebrow009
+    13700002: man1_Eyelashes01
+    13700004: man1_HighPolyEyes
+    13700006: man1_jeans01
+    13700008: man1_mhair02
+    13700010: man1_Tshirt01
+    13700012: man1Body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: man1
+        weight: 1
+      - path: man1/CustomShapes
+        weight: 0
+      - path: man1/CustomShapes/GZM_Ball025
+        weight: 0
+      - path: man1/CustomShapes/GZM_Breast_L
+        weight: 0
+      - path: man1/CustomShapes/GZM_Breast_R
+        weight: 0
+      - path: man1/CustomShapes/GZM_Circle025
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleChest
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleHips
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleSpine
+        weight: 0
+      - path: man1/CustomShapes/GZM_CrownHips
+        weight: 0
+      - path: man1/CustomShapes/GZM_Cube025
+        weight: 0
+      - path: man1/CustomShapes/GZM_FaceHead
+        weight: 0
+      - path: man1/CustomShapes/GZM_FaceJaw
+        weight: 0
+      - path: man1/CustomShapes/GZM_Foot
+        weight: 0
+      - path: man1/CustomShapes/GZM_FootIK
+        weight: 0
+      - path: man1/CustomShapes/GZM_Gaze
+        weight: 0
+      - path: man1/CustomShapes/GZM_Hand
+        weight: 0
+      - path: man1/CustomShapes/GZM_HandIK
+        weight: 0
+      - path: man1/CustomShapes/GZM_Head
+        weight: 0
+      - path: man1/CustomShapes/GZM_Jaw
+        weight: 0
+      - path: man1/CustomShapes/GZM_Knuckle
+        weight: 0
+      - path: man1/CustomShapes/GZM_LoLid
+        weight: 0
+      - path: man1/CustomShapes/GZM_Master
+        weight: 0
+      - path: man1/CustomShapes/GZM_Neck
+        weight: 0
+      - path: man1/CustomShapes/GZM_RevFoot
+        weight: 0
+      - path: man1/CustomShapes/GZM_RevToe
+        weight: 0
+      - path: man1/CustomShapes/GZM_Root
+        weight: 0
+      - path: man1/CustomShapes/GZM_Shoulder
+        weight: 0
+      - path: man1/CustomShapes/GZM_Toe
+        weight: 0
+      - path: man1/CustomShapes/GZM_Tongue
+        weight: 0
+      - path: man1/CustomShapes/GZM_UpLid
+        weight: 0
+      - path: man1/hand_L_001
+        weight: 0
+      - path: man1/hand_R_001
+        weight: 0
+      - path: man1/hips
+        weight: 1
+      - path: man1/hips/spine
+        weight: 1
+      - path: man1/hips/spine/spine-1
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/eye_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/eye_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base/tongue_mid
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base/tongue_mid/tongue_tip
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/lolid_L
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/lolid_R
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/uplid_L
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/uplid_R
+        weight: 0
+      - path: man1/hips/thigh_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: man1/hips/thigh_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: man1/shin_L_002
+        weight: 0
+      - path: man1/shin_R_001
+        weight: 0
+      - path: man1_Eyebrow009
+        weight: 0
+      - path: man1_Eyelashes01
+        weight: 0
+      - path: man1_HighPolyEyes
+        weight: 0
+      - path: man1_jeans01
+        weight: 0
+      - path: man1_mhair02
+        weight: 0
+      - path: man1_Tshirt01
+        weight: 0
+      - path: man1Body
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: man1
+        weight: 1
+      - path: man1/CustomShapes
+        weight: 0
+      - path: man1/CustomShapes/GZM_Ball025
+        weight: 0
+      - path: man1/CustomShapes/GZM_Breast_L
+        weight: 0
+      - path: man1/CustomShapes/GZM_Breast_R
+        weight: 0
+      - path: man1/CustomShapes/GZM_Circle025
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleChest
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleHips
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleSpine
+        weight: 0
+      - path: man1/CustomShapes/GZM_CrownHips
+        weight: 0
+      - path: man1/CustomShapes/GZM_Cube025
+        weight: 0
+      - path: man1/CustomShapes/GZM_FaceHead
+        weight: 0
+      - path: man1/CustomShapes/GZM_FaceJaw
+        weight: 0
+      - path: man1/CustomShapes/GZM_Foot
+        weight: 0
+      - path: man1/CustomShapes/GZM_FootIK
+        weight: 0
+      - path: man1/CustomShapes/GZM_Gaze
+        weight: 0
+      - path: man1/CustomShapes/GZM_Hand
+        weight: 0
+      - path: man1/CustomShapes/GZM_HandIK
+        weight: 0
+      - path: man1/CustomShapes/GZM_Head
+        weight: 0
+      - path: man1/CustomShapes/GZM_Jaw
+        weight: 0
+      - path: man1/CustomShapes/GZM_Knuckle
+        weight: 0
+      - path: man1/CustomShapes/GZM_LoLid
+        weight: 0
+      - path: man1/CustomShapes/GZM_Master
+        weight: 0
+      - path: man1/CustomShapes/GZM_Neck
+        weight: 0
+      - path: man1/CustomShapes/GZM_RevFoot
+        weight: 0
+      - path: man1/CustomShapes/GZM_RevToe
+        weight: 0
+      - path: man1/CustomShapes/GZM_Root
+        weight: 0
+      - path: man1/CustomShapes/GZM_Shoulder
+        weight: 0
+      - path: man1/CustomShapes/GZM_Toe
+        weight: 0
+      - path: man1/CustomShapes/GZM_Tongue
+        weight: 0
+      - path: man1/CustomShapes/GZM_UpLid
+        weight: 0
+      - path: man1/hand_L_001
+        weight: 0
+      - path: man1/hand_R_001
+        weight: 0
+      - path: man1/hips
+        weight: 1
+      - path: man1/hips/spine
+        weight: 1
+      - path: man1/hips/spine/spine-1
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/eye_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/eye_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base/tongue_mid
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base/tongue_mid/tongue_tip
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/lolid_L
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/lolid_R
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/uplid_L
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/uplid_R
+        weight: 0
+      - path: man1/hips/thigh_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: man1/hips/thigh_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: man1/shin_L_002
+        weight: 0
+      - path: man1/shin_R_001
+        weight: 0
+      - path: man1_Eyebrow009
+        weight: 0
+      - path: man1_Eyelashes01
+        weight: 0
+      - path: man1_HighPolyEyes
+        weight: 0
+      - path: man1_jeans01
+        weight: 0
+      - path: man1_mhair02
+        weight: 0
+      - path: man1_Tshirt01
+        weight: 0
+      - path: man1Body
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Standby
+      takeName: Standby
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: man1
+        weight: 1
+      - path: man1/CustomShapes
+        weight: 0
+      - path: man1/CustomShapes/GZM_Ball025
+        weight: 0
+      - path: man1/CustomShapes/GZM_Breast_L
+        weight: 0
+      - path: man1/CustomShapes/GZM_Breast_R
+        weight: 0
+      - path: man1/CustomShapes/GZM_Circle025
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleChest
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleHips
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleSpine
+        weight: 0
+      - path: man1/CustomShapes/GZM_CrownHips
+        weight: 0
+      - path: man1/CustomShapes/GZM_Cube025
+        weight: 0
+      - path: man1/CustomShapes/GZM_FaceHead
+        weight: 0
+      - path: man1/CustomShapes/GZM_FaceJaw
+        weight: 0
+      - path: man1/CustomShapes/GZM_Foot
+        weight: 0
+      - path: man1/CustomShapes/GZM_FootIK
+        weight: 0
+      - path: man1/CustomShapes/GZM_Gaze
+        weight: 0
+      - path: man1/CustomShapes/GZM_Hand
+        weight: 0
+      - path: man1/CustomShapes/GZM_HandIK
+        weight: 0
+      - path: man1/CustomShapes/GZM_Head
+        weight: 0
+      - path: man1/CustomShapes/GZM_Jaw
+        weight: 0
+      - path: man1/CustomShapes/GZM_Knuckle
+        weight: 0
+      - path: man1/CustomShapes/GZM_LoLid
+        weight: 0
+      - path: man1/CustomShapes/GZM_Master
+        weight: 0
+      - path: man1/CustomShapes/GZM_Neck
+        weight: 0
+      - path: man1/CustomShapes/GZM_RevFoot
+        weight: 0
+      - path: man1/CustomShapes/GZM_RevToe
+        weight: 0
+      - path: man1/CustomShapes/GZM_Root
+        weight: 0
+      - path: man1/CustomShapes/GZM_Shoulder
+        weight: 0
+      - path: man1/CustomShapes/GZM_Toe
+        weight: 0
+      - path: man1/CustomShapes/GZM_Tongue
+        weight: 0
+      - path: man1/CustomShapes/GZM_UpLid
+        weight: 0
+      - path: man1/hand_L_001
+        weight: 0
+      - path: man1/hand_R_001
+        weight: 0
+      - path: man1/hips
+        weight: 1
+      - path: man1/hips/spine
+        weight: 1
+      - path: man1/hips/spine/spine-1
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/eye_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/eye_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base/tongue_mid
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base/tongue_mid/tongue_tip
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/lolid_L
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/lolid_R
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/uplid_L
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/uplid_R
+        weight: 0
+      - path: man1/hips/thigh_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: man1/hips/thigh_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: man1/shin_L_002
+        weight: 0
+      - path: man1/shin_R_001
+        weight: 0
+      - path: man1_Eyebrow009
+        weight: 0
+      - path: man1_Eyelashes01
+        weight: 0
+      - path: man1_HighPolyEyes
+        weight: 0
+      - path: man1_jeans01
+        weight: 0
+      - path: man1_mhair02
+        weight: 0
+      - path: man1_Tshirt01
+        weight: 0
+      - path: man1Body
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TakingOff
+      takeName: TakingOff
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: man1
+        weight: 1
+      - path: man1/CustomShapes
+        weight: 0
+      - path: man1/CustomShapes/GZM_Ball025
+        weight: 0
+      - path: man1/CustomShapes/GZM_Breast_L
+        weight: 0
+      - path: man1/CustomShapes/GZM_Breast_R
+        weight: 0
+      - path: man1/CustomShapes/GZM_Circle025
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleChest
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleHips
+        weight: 0
+      - path: man1/CustomShapes/GZM_CircleSpine
+        weight: 0
+      - path: man1/CustomShapes/GZM_CrownHips
+        weight: 0
+      - path: man1/CustomShapes/GZM_Cube025
+        weight: 0
+      - path: man1/CustomShapes/GZM_FaceHead
+        weight: 0
+      - path: man1/CustomShapes/GZM_FaceJaw
+        weight: 0
+      - path: man1/CustomShapes/GZM_Foot
+        weight: 0
+      - path: man1/CustomShapes/GZM_FootIK
+        weight: 0
+      - path: man1/CustomShapes/GZM_Gaze
+        weight: 0
+      - path: man1/CustomShapes/GZM_Hand
+        weight: 0
+      - path: man1/CustomShapes/GZM_HandIK
+        weight: 0
+      - path: man1/CustomShapes/GZM_Head
+        weight: 0
+      - path: man1/CustomShapes/GZM_Jaw
+        weight: 0
+      - path: man1/CustomShapes/GZM_Knuckle
+        weight: 0
+      - path: man1/CustomShapes/GZM_LoLid
+        weight: 0
+      - path: man1/CustomShapes/GZM_Master
+        weight: 0
+      - path: man1/CustomShapes/GZM_Neck
+        weight: 0
+      - path: man1/CustomShapes/GZM_RevFoot
+        weight: 0
+      - path: man1/CustomShapes/GZM_RevToe
+        weight: 0
+      - path: man1/CustomShapes/GZM_Root
+        weight: 0
+      - path: man1/CustomShapes/GZM_Shoulder
+        weight: 0
+      - path: man1/CustomShapes/GZM_Toe
+        weight: 0
+      - path: man1/CustomShapes/GZM_Tongue
+        weight: 0
+      - path: man1/CustomShapes/GZM_UpLid
+        weight: 0
+      - path: man1/hand_L_001
+        weight: 0
+      - path: man1/hand_R_001
+        weight: 0
+      - path: man1/hips
+        weight: 1
+      - path: man1/hips/spine
+        weight: 1
+      - path: man1/hips/spine/spine-1
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L/f_index_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_index_L/f_index_01_L/f_index_02_L/f_index_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L/f_middle_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_middle_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L/f_pinky_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_pinky_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L/f_ring_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/palm_ring_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_L/deltoid_L/upper_arm_L/forearm_L/hand_L/thumb_01_L/thumb_02_L/thumb_03_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R/f_index_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_index_R/f_index_01_R/f_index_02_R/f_index_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R/f_middle_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_middle_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R/f_pinky_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_pinky_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R/f_ring_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/palm_ring_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/clavicle_R/deltoid_R/upper_arm_R/forearm_R/hand_R/thumb_01_R/thumb_02_R/thumb_03_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/eye_L
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/eye_R
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw
+        weight: 1
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base/tongue_mid
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/jaw/tongue_base/tongue_mid/tongue_tip
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/lolid_L
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/lolid_R
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/uplid_L
+        weight: 0
+      - path: man1/hips/spine/spine-1/chest/chest-1/neck/head/uplid_R
+        weight: 0
+      - path: man1/hips/thigh_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L/foot_L
+        weight: 1
+      - path: man1/hips/thigh_L/shin_L/foot_L/toe_L
+        weight: 1
+      - path: man1/hips/thigh_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R/foot_R
+        weight: 1
+      - path: man1/hips/thigh_R/shin_R/foot_R/toe_R
+        weight: 1
+      - path: man1/shin_L_002
+        weight: 0
+      - path: man1/shin_R_001
+        weight: 0
+      - path: man1_Eyebrow009
+        weight: 0
+      - path: man1_Eyelashes01
+        weight: 0
+      - path: man1_HighPolyEyes
+        weight: 0
+      - path: man1_jeans01
+        weight: 0
+      - path: man1_mhair02
+        weight: 0
+      - path: man1_Tshirt01
+        weight: 0
+      - path: man1Body
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shin_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shin_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine-1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chest-1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upper_arm_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upper_arm_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: forearm_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: forearm_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toe_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toe_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: eye_L
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: eye_R
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: jaw
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index_01_L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index_02_L
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index_03_L
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle_01_L
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle_02_L
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle_03_L
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_01_L
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_02_L
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_03_L
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky_01_L
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky_02_L
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky_03_L
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring_01_L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring_02_L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring_03_L
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index_01_R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index_02_R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index_03_R
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle_01_R
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle_02_R
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle_03_R
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_01_R
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_02_R
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_03_R
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky_01_R
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky_02_R
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky_03_R
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring_01_R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring_02_R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring_03_R
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: man1withIK(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: man1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106888, y: 0, z: -0, w: .707106769}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: CustomShapes
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Ball025
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Breast_L
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Breast_R
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Circle025
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_CircleChest
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_CircleHips
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_CircleSpine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_CrownHips
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Cube025
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_FaceHead
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_FaceJaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Foot
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_FootIK
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Gaze
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_HandIK
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Head
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Knuckle
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_LoLid
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Master
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Neck
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_RevFoot
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_RevToe
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Root
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Shoulder
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Toe
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_Tongue
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GZM_UpLid
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: hand_L_001
+      position: {x: -7.40721369, y: .058766529, z: 12.0795975}
+      rotation: {x: 1, y: -0, z: 0, w: -7.55001537e-08}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: hand_R_001
+      position: {x: 7.40720701, y: .0588287562, z: 12.0795736}
+      rotation: {x: -0, y: 0, z: 1, w: -7.55001537e-08}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: hips
+      position: {x: -1.16415003e-10, y: -.0358844995, z: 8.96926022}
+      rotation: {x: .446486235, y: .446486264, z: -.548315585, w: .548315704}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: spine
+      position: {x: -1.12966657, y: 8.52874606e-08, z: 1.63912773e-07}
+      rotation: {x: -4.68243089e-09, y: -.0316462442, z: 2.8328706e-09, w: .999499142}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: spine-1
+      position: {x: -.132610336, y: 1.00117798e-08, z: 1.49011612e-08}
+      rotation: {x: -9.10937645e-12, y: -9.98228788e-05, z: 1.51845214e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chest
+      position: {x: -.13251397, y: 1.00044808e-08, z: -2.08616257e-07}
+      rotation: {x: 7.57499041e-09, y: .0681967437, z: -2.80803825e-09, w: .997671902}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chest-1
+      position: {x: -1.55966699, y: 1.17751625e-07, z: 5.96046448e-08}
+      rotation: {x: 1.31425306e-08, y: .178194955, z: 2.47131149e-10, w: .983995199}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: clavicle_L
+      position: {x: -1.55691028, y: -.218300894, z: .5332793}
+      rotation: {x: -.567549944, y: -.476030916, z: .35474658, w: .570470393}
+      scale: {x: .999999821, y: .999999821, z: .999999821}
+      transformModified: 1
+    - name: deltoid_L
+      position: {x: -1.10385132, y: 1.1920929e-07, z: 9.68575478e-08}
+      rotation: {x: -.36648345, y: -.431527317, z: -.26025188, w: .782140017}
+      scale: {x: 1, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: upper_arm_L
+      position: {x: -.801318586, y: -7.15255737e-07, z: -9.46223736e-07}
+      rotation: {x: .836948514, y: .338885605, z: .0100692585, w: .429618955}
+      scale: {x: 1, y: .999999881, z: 1}
+      transformModified: 1
+    - name: forearm_L
+      position: {x: -2.18109274, y: 1.47521496e-06, z: -7.4505806e-08}
+      rotation: {x: -.000476955262, y: .0511911176, z: -.00860351045, w: .998651743}
+      scale: {x: .999999821, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: hand_L
+      position: {x: -2.41549206, y: 4.80562449e-07, z: 5.96046448e-08}
+      rotation: {x: .69241339, y: .0473824702, z: -.0877004191, w: .714581847}
+      scale: {x: 1.00000036, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: palm_index_L
+      position: {x: -.378760278, y: .056106545, z: .0426266044}
+      rotation: {x: .230870605, y: -.0961303711, z: -.111816503, w: .961745739}
+      scale: {x: .99999994, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: f_index_01_L
+      position: {x: -.667458534, y: 3.7252903e-08, z: -4.60073352e-07}
+      rotation: {x: -.0413263515, y: .0250963792, z: -.435147673, w: .899059951}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: f_index_02_L
+      position: {x: -.24442406, y: -1.49011612e-08, z: 3.7252903e-08}
+      rotation: {x: .00305247307, y: .0385933593, z: .000477410969, w: .999250293}
+      scale: {x: 1, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: f_index_03_L
+      position: {x: -.21924305, y: -1.04308128e-07, z: 2.38418579e-07}
+      rotation: {x: -.00572775397, y: .0163341444, z: -.0030262426, w: .999845624}
+      scale: {x: .999999881, y: .999999881, z: 1}
+      transformModified: 1
+    - name: palm_middle_L
+      position: {x: -.397857755, y: -.0452589691, z: -.00343483686}
+      rotation: {x: .0382228382, y: -.0718432143, z: -.0292451531, w: .996254146}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: f_middle_01_L
+      position: {x: -.623534679, y: -1.49011612e-08, z: -4.22820449e-07}
+      rotation: {x: -.0349748544, y: .170963153, z: -.0996615738, w: .979599953}
+      scale: {x: 1, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: f_middle_02_L
+      position: {x: -.308437616, y: 1.49011612e-07, z: -1.01514161e-06}
+      rotation: {x: -.00322879455, y: .0385225415, z: -.00242374442, w: .999249637}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: f_middle_03_L
+      position: {x: -.242156699, y: -1.41561031e-07, z: -7.71135092e-07}
+      rotation: {x: .00501325214, y: -.00349114486, z: .0132448971, w: .999893606}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: palm_pinky_L
+      position: {x: -.432009339, y: -.228932709, z: -.0297542587}
+      rotation: {x: .150203496, y: -.118653804, z: .158662826, w: .968600214}
+      scale: {x: .999999821, y: 1, z: 1}
+      transformModified: 1
+    - name: f_pinky_01_L
+      position: {x: -.47191155, y: 1.78813934e-07, z: -1.11199915e-06}
+      rotation: {x: -.0491280966, y: .196867928, z: -.306200802, w: .930091739}
+      scale: {x: .99999994, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: f_pinky_02_L
+      position: {x: -.208770379, y: -1.1920929e-07, z: -1.2870878e-06}
+      rotation: {x: -.00518435985, y: .0398627557, z: -.00448220829, w: .999181747}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: f_pinky_03_L
+      position: {x: -.137548193, y: -2.98023224e-08, z: -3.05473804e-07}
+      rotation: {x: .00816625077, y: .0123580899, z: .0145652024, w: .999784231}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: palm_ring_L
+      position: {x: -.408452094, y: -.151283816, z: -.0161219314}
+      rotation: {x: .0595926493, y: -.113297977, z: .0343030505, w: .99117893}
+      scale: {x: .999999881, y: .999999821, z: .999999881}
+      transformModified: 1
+    - name: f_ring_01_L
+      position: {x: -.557612181, y: -1.11758709e-07, z: 7.71135092e-07}
+      rotation: {x: -.0559188947, y: .215117097, z: -.163588241, w: .961164176}
+      scale: {x: .999999881, y: .999999881, z: 1}
+      transformModified: 1
+    - name: f_ring_02_L
+      position: {x: -.273008555, y: 1.1920929e-07, z: -1.38580799e-06}
+      rotation: {x: -.00434104633, y: .0378679894, z: -.00444540009, w: .999263465}
+      scale: {x: .999999881, y: .999999821, z: .999999821}
+      transformModified: 1
+    - name: f_ring_03_L
+      position: {x: -.229623824, y: -2.98023224e-08, z: 2.75671482e-07}
+      rotation: {x: .0053941356, y: -.00752318604, z: .0258527361, w: .999622941}
+      scale: {x: 1.00000012, y: 1, z: .999999881}
+      transformModified: 1
+    - name: thumb_01_L
+      position: {x: -.415984273, y: .160569608, z: .137424588}
+      rotation: {x: .689357102, y: -.0522644632, z: -.302363604, w: .656225204}
+      scale: {x: .999999821, y: .999999762, z: .999999762}
+      transformModified: 1
+    - name: thumb_02_L
+      position: {x: -.255819261, y: 2.98954546e-07, z: 3.87430191e-07}
+      rotation: {x: -.00384586537, y: .0377694927, z: -.000288988551, w: .999279082}
+      scale: {x: .99999994, y: 1, z: .999999881}
+      transformModified: 1
+    - name: thumb_03_L
+      position: {x: -.348007739, y: 1.24517828e-06, z: 1.49011612e-07}
+      rotation: {x: -.00895622745, y: .0363401137, z: -.00338608702, w: .999293625}
+      scale: {x: .99999994, y: 1.00000012, z: .999999881}
+      transformModified: 1
+    - name: clavicle_R
+      position: {x: -1.55691016, y: .218301117, z: .533279181}
+      rotation: {x: .567549944, y: -.476031154, z: -.354746521, w: .570470273}
+      scale: {x: .999999762, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: deltoid_R
+      position: {x: -1.10385084, y: 4.47034836e-08, z: 1.06543303e-06}
+      rotation: {x: .366483361, y: -.431527406, z: .26025182, w: .782140017}
+      scale: {x: 1, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: upper_arm_R
+      position: {x: -.801318824, y: -1.34110451e-07, z: -4.47034836e-07}
+      rotation: {x: .836948752, y: -.33888647, z: .0100674583, w: -.429617792}
+      scale: {x: .999999821, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: forearm_R
+      position: {x: -2.18109274, y: -6.55651093e-07, z: 2.23517418e-07}
+      rotation: {x: .000476334681, y: .0511912256, z: .00860226061, w: .998651743}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: hand_R
+      position: {x: -2.41549158, y: -4.54485416e-07, z: -2.98023224e-08}
+      rotation: {x: -.692414105, y: .0473824851, z: .0876993686, w: .71458137}
+      scale: {x: 1.00000012, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: palm_index_R
+      position: {x: -.378758878, y: -.0561068505, z: .0426254421}
+      rotation: {x: -.230870515, y: -.0961301699, z: .111816518, w: .961745739}
+      scale: {x: .999999821, y: .99999994, z: 1}
+      transformModified: 1
+    - name: f_index_01_R
+      position: {x: -.667458475, y: 6.70552254e-08, z: 4.67523932e-07}
+      rotation: {x: .0413256623, y: .0250940081, z: .435147643, w: .899060071}
+      scale: {x: .999999821, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: f_index_02_R
+      position: {x: -.244424492, y: 1.49011612e-07, z: 2.5331974e-07}
+      rotation: {x: -.00305230892, y: .038594611, z: -.000480026734, w: .999250174}
+      scale: {x: 1, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: f_index_03_R
+      position: {x: -.219243586, y: -1.49011612e-08, z: 2.30967999e-07}
+      rotation: {x: .00572767435, y: .0163324084, z: .0030259632, w: .999845624}
+      scale: {x: .99999994, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: palm_middle_R
+      position: {x: -.397857845, y: .0452593789, z: -.00343488902}
+      rotation: {x: -.0382228717, y: -.0718429238, z: .029245127, w: .996254146}
+      scale: {x: .999999821, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: f_middle_01_R
+      position: {x: -.623533487, y: -7.4505806e-08, z: 8.1025064e-07}
+      rotation: {x: .0349750705, y: .170959055, z: .0996616036, w: .979600668}
+      scale: {x: .999999881, y: 1, z: .999999821}
+      transformModified: 1
+    - name: f_middle_02_R
+      position: {x: -.308437228, y: -2.16066837e-07, z: 3.70666385e-07}
+      rotation: {x: .00322906836, y: .0385199897, z: .00242321659, w: .999249756}
+      scale: {x: 1, y: .999999821, z: 1.00000024}
+      transformModified: 1
+    - name: f_middle_03_R
+      position: {x: -.2421574, y: 3.94880772e-07, z: 1.10454857e-06}
+      rotation: {x: -.0050133206, y: -.00349217211, z: -.0132445591, w: .999893665}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: palm_pinky_R
+      position: {x: -.434215397, y: .254445404, z: -.0249712691}
+      rotation: {x: -.150577605, y: -.129599363, z: -.133872122, w: .970880389}
+      scale: {x: 1, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: f_pinky_01_R
+      position: {x: -.464940876, y: 1.78813934e-07, z: 1.02445483e-06}
+      rotation: {x: .0535831191, y: .210228443, z: .283294797, w: .934171796}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: f_pinky_02_R
+      position: {x: -.208768278, y: -2.98023224e-08, z: -2.02748924e-06}
+      rotation: {x: .00518445671, y: .03985589, z: .0044832658, w: .999181926}
+      scale: {x: 1, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: f_pinky_03_R
+      position: {x: -.137548864, y: 7.4505806e-08, z: 2.4586916e-07}
+      rotation: {x: -.00816612318, y: .0123607777, z: -.0145651316, w: .999784172}
+      scale: {x: .99999994, y: .99999994, z: .999999821}
+      transformModified: 1
+    - name: palm_ring_R
+      position: {x: -.411353141, y: .179456189, z: -.0127308667}
+      rotation: {x: -.0725247934, y: -.118365489, z: -.0106861843, w: .990260363}
+      scale: {x: .99999994, y: 1, z: .999999881}
+      transformModified: 1
+    - name: f_ring_01_R
+      position: {x: -.554754853, y: 2.08616257e-07, z: 8.94069672e-08}
+      rotation: {x: .0719540492, y: .218726099, z: .141705841, w: .962756932}
+      scale: {x: .999999881, y: 1, z: .99999994}
+      transformModified: 1
+    - name: f_ring_02_R
+      position: {x: -.273008049, y: 1.49011612e-07, z: 1.4975667e-06}
+      rotation: {x: .00434091641, y: .0378729925, z: .00444439519, w: .999263287}
+      scale: {x: 1, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: f_ring_03_R
+      position: {x: -.229624942, y: -1.49011612e-07, z: 8.94069672e-08}
+      rotation: {x: -.0053938725, y: -.00752322841, z: -.0258527119, w: .999622941}
+      scale: {x: .999999881, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: thumb_01_R
+      position: {x: -.415983438, y: -.160569981, z: .137423724}
+      rotation: {x: -.68909049, y: -.0521435849, z: .302385002, w: .656504869}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: thumb_02_R
+      position: {x: -.255818933, y: 8.18632543e-07, z: 2.5331974e-07}
+      rotation: {x: .0037406967, y: .0377695821, z: .000260637957, w: .999279499}
+      scale: {x: 1, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: thumb_03_R
+      position: {x: -.348008662, y: -1.69686973e-06, z: 4.17232513e-07}
+      rotation: {x: .00890112761, y: .0363427959, z: .00336731924, w: .999294102}
+      scale: {x: .99999994, y: .999999821, z: .999999821}
+      transformModified: 1
+    - name: neck
+      position: {x: -2.15040636, y: 1.62351157e-07, z: 2.98023224e-08}
+      rotation: {x: -1.04446496e-08, y: -.138343588, z: 2.37322708e-15, w: .990384281}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: head
+      position: {x: -1.07075286, y: 8.08396052e-08, z: -7.4505806e-09}
+      rotation: {x: 2.26165331e-09, y: .0299565047, z: -1.87898865e-15, w: .999551237}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: eye_L
+      position: {x: -.296685189, y: -.292227983, z: 1.18056822}
+      rotation: {x: .422339499, y: .608887076, z: -.384711772, w: .550347865}
+      scale: {x: 1, y: 1.00000012, z: .999999762}
+      transformModified: 1
+    - name: eye_R
+      position: {x: -.296685159, y: .292228043, z: 1.18056822}
+      rotation: {x: -.422282368, y: .608932436, z: .384644061, w: .550388813}
+      scale: {x: 1.00000012, y: 1.00000024, z: .999999881}
+      transformModified: 1
+    - name: jaw
+      position: {x: .0377489813, y: -2.8500089e-09, z: .524693131}
+      rotation: {x: 6.92525859e-08, y: .917278349, z: -6.71929341e-15, w: .398246676}
+      scale: {x: 1, y: .999999762, z: 1}
+      transformModified: 1
+    - name: tongue_base
+      position: {x: -.416277766, y: 3.23593028e-08, z: .147999316}
+      rotation: {x: -5.48757271e-08, y: -.43463096, z: -8.82743301e-09, w: .900608659}
+      scale: {x: .999999821, y: 1, z: .999999821}
+      transformModified: 1
+    - name: tongue_mid
+      position: {x: -.28415519, y: 2.14531681e-08, z: -4.47034836e-07}
+      rotation: {x: 2.89309323e-08, y: .0684585571, z: -1.20392229e-11, w: .997653961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: tongue_tip
+      position: {x: -.197592199, y: 1.49177914e-08, z: -2.57510692e-07}
+      rotation: {x: 1.7529187e-08, y: .232180804, z: -4.36031301e-15, w: .972672641}
+      scale: {x: .99999994, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: lolid_L
+      position: {x: -.296686143, y: -.304745972, z: 1.18056774}
+      rotation: {x: 6.34356496e-08, y: .840230942, z: 1.98908578e-14, w: .542228699}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lolid_R
+      position: {x: -.296686113, y: .304746032, z: 1.18056774}
+      rotation: {x: 6.34356496e-08, y: .840230942, z: 1.98908578e-14, w: .542228699}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: uplid_L
+      position: {x: -.296684235, y: -.300876975, z: 1.18056798}
+      rotation: {x: 4.86221907e-08, y: .644020319, z: 2.1662406e-15, w: .76500839}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: uplid_R
+      position: {x: -.296684206, y: .299517095, z: 1.18056798}
+      rotation: {x: 4.79359805e-08, y: .634931505, z: 2.07819889e-14, w: .772568464}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: thigh_L
+      position: {x: -.0410274453, y: -1.02057004, z: -.0889692307}
+      rotation: {x: -.0213911589, y: .997436106, z: .0191448741, w: -.0655529648}
+      scale: {x: .99999994, y: 1.00000036, z: 1}
+      transformModified: 1
+    - name: shin_L
+      position: {x: -4.1258831, y: 1.92318112e-07, z: 2.98023224e-08}
+      rotation: {x: -1.21224286e-06, y: .065096274, z: -1.06472305e-06, w: .997879028}
+      scale: {x: .999999821, y: 1, z: .999999821}
+      transformModified: 1
+    - name: foot_L
+      position: {x: -4.20776367, y: 2.7610804e-07, z: -3.30619514e-08}
+      rotation: {x: .11750558, y: -.544486463, z: .0636971518, w: .828051686}
+      scale: {x: .999999821, y: .999999821, z: .999999881}
+      transformModified: 1
+    - name: toe_L
+      position: {x: -1.32511747, y: 1.24797225e-07, z: -6.70552254e-08}
+      rotation: {x: -5.93461891e-06, y: -.233870596, z: 2.94587653e-06, w: .972267747}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: thigh_R
+      position: {x: -.0410244316, y: 1.02056992, z: -.0889697149}
+      rotation: {x: .0211368855, y: .99848932, z: -.0182636175, w: -.0473154634}
+      scale: {x: 1, y: .999999762, z: 1.00000012}
+      transformModified: 1
+    - name: shin_R
+      position: {x: -4.12595272, y: 2.70083547e-07, z: -6.70552254e-08}
+      rotation: {x: 1.18158948e-06, y: .0650957152, z: 9.53003564e-07, w: .997879028}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: foot_R
+      position: {x: -4.20769596, y: 3.22237611e-07, z: 6.51925802e-09}
+      rotation: {x: .828049958, y: -.0637011379, z: .544490874, w: .117495745}
+      scale: {x: 1.00000012, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: toe_R
+      position: {x: -1.3251183, y: 7.82310963e-08, z: 4.47034836e-08}
+      rotation: {x: 6.29668284e-06, y: .233879372, z: 2.14543161e-06, w: .972265661}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: shin_L_002
+      position: {x: -.626278043, y: -.00476849079, z: .685039997}
+      rotation: {x: 0, y: 0, z: .707106888, w: .707106769}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: shin_R_001
+      position: {x: .637125611, y: -.307958186, z: .69241333}
+      rotation: {x: 0, y: 0, z: .707106888, w: .707106769}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: man1_Eyebrow009
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: man1_Eyelashes01
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: man1_HighPolyEyes
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: man1_jeans01
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: man1_mhair02
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: man1_Tshirt01
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: man1Body
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
