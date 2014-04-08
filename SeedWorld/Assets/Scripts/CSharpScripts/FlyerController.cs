@@ -363,7 +363,13 @@ public class FlyerController : OVRComponent
 //			Vector3 dir = q * Vector3.forward;
 //			q.SetLookRotation(dir, Vector3.up);
 //			DirXform.rotation = q;
-			DirXform.Rotate (0, YRotation, 0);
+			Debug.Log("Yrotation: " + YRotation);
+			transform.Rotate (Vector3.up, YRotation);
+			// Jude: may removed if make camera follow the body
+			CameraController.transform.Rotate(Vector3.up, YRotation);
+			YRotation = 0.0f;
+			
+//			transform.rotation = DirXform.transform.rotation;
 		}
 	}
 	
