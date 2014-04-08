@@ -269,9 +269,9 @@ public class FlyerController : OVRComponent
 		float rotateInfluence = DeltaTime * RotationAmount * RotationScaleMultiplier;
 
 		if (moveLeft)
-						YRotation -= rotateInfluence * 0.5f;
+						YRotation -= rotateInfluence * 0.1f;
 		if (moveRight)
-						YRotation += rotateInfluence * 0.5f;
+						YRotation += rotateInfluence * 0.1f;
 //		//reduce by half to avoid getting ill
 //		if (Input.GetKey(KeyCode.Q)) 
 //			YRotation -= rotateInfluence * 0.5f;  
@@ -363,10 +363,10 @@ public class FlyerController : OVRComponent
 //			Vector3 dir = q * Vector3.forward;
 //			q.SetLookRotation(dir, Vector3.up);
 //			DirXform.rotation = q;
-			Debug.Log("Yrotation: " + YRotation);
+//			Debug.Log("Yrotation: " + YRotation);
 			transform.Rotate (Vector3.up, YRotation);
 			// Jude: may removed if make camera follow the body
-			CameraController.transform.Rotate(Vector3.up, YRotation);
+			CameraController.SetOrientationOffset(transform.rotation);
 			YRotation = 0.0f;
 			
 //			transform.rotation = DirXform.transform.rotation;
