@@ -3,6 +3,8 @@ using System.Collections;
 
 public class FlyingController : MonoBehaviour {
 	protected Animator anim;
+
+	public FlyerController FlyerControllerReference;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -12,6 +14,13 @@ public class FlyingController : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown("space")) {
 			anim.SetBool("StartFlying", true);
+		}
+	}
+
+	//Mecanim AnimationEvent called when ReadyForFly animation done.
+	void OnReadyForFlying(int value){
+		if (FlyerControllerReference) {
+			FlyerControllerReference.IsFlying = true;
 		}
 	}
 }

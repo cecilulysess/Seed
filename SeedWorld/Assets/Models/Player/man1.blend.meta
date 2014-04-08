@@ -116,6 +116,10 @@ ModelImporter:
     100220: upper_arm_L
     100222: upper_arm_R
     100224: man1_Tshirt01
+    100226: hand_L_001
+    100228: hand_R_001
+    100230: shin_L_002
+    100232: shin_R_001
     400000: chest
     400002: chest-1
     400004: clavicle_L
@@ -229,6 +233,10 @@ ModelImporter:
     400220: upper_arm_L
     400222: upper_arm_R
     400224: man1_Tshirt01
+    400226: hand_L_001
+    400228: hand_R_001
+    400230: shin_L_002
+    400232: shin_R_001
     2300000: GZM_Ball025
     2300002: GZM_Breast_L
     2300004: GZM_Breast_R
