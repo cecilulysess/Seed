@@ -237,10 +237,10 @@ public class FlyerController : OVRComponent
 
 		// Jude: Animator Controlling parameters
 		if (moveForward) {
-						ForwardSpeed = 0.4f;
+						ForwardSpeed = 0.5f;
 				} else {
 						if (moveBack) {
-								ForwardSpeed = -0.4f;
+								ForwardSpeed = -0.5f;
 						} else {
 								ForwardSpeed = 0.0f;
 						}
@@ -278,7 +278,7 @@ public class FlyerController : OVRComponent
 		
 		// Run!
 		if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) {
-						moveInfluence *= 2.0f;
+						moveInfluence *= 4.0f;
 						ForwardSpeed *= 2.0f;
 						DirHori *= 2.0f;
 						DirVert *= 2.0f;
@@ -380,7 +380,7 @@ public class FlyerController : OVRComponent
 	}
 
 	void SetAnimator(float fs, float dh, float dv){
-		Debug.Log ("Set animator for: " + animator);
+//		Debug.Log ("Set animator for: " + animator);
 		animator.SetFloat("ForwardSpeed", fs, 0.5f, Time.deltaTime);
 		animator.SetFloat("DirectionHorizontal", dh, .25f, Time.deltaTime);	
 		animator.SetFloat("DirectionVertical", dv, .25f, Time.deltaTime);	

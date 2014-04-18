@@ -19,7 +19,9 @@ public class FlyingController : MonoBehaviour {
 
 	//Mecanim AnimationEvent called when ReadyForFly animation done.
 	void OnReadyForFlying(int value){
+		Debug.Log("Triggered On Ready for Flying animation");
 		if (FlyerControllerReference) {
+			Debug.Log("Set is flying to true");
 			FlyerControllerReference.IsFlying = true;
 		}
 	}
