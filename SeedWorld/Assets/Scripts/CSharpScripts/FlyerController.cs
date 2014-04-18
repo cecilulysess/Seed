@@ -70,6 +70,7 @@ public class FlyerController : OVRComponent
 	// Jude: Is the user is flying
 	public bool IsFlying = false;
 	// * * * * * * * * * * * * *
+	protected Animator animator;
 	
 	// Awake
 	new public virtual void Awake()
@@ -117,6 +118,11 @@ public class FlyerController : OVRComponent
 		InitializeInputs();	
 		Debug.Log ("Initialized Flyer Controller");
 		SetCameras();
+
+		animator = GetComponentsInChildren<Animator>()[0];
+		
+		if(animator.layerCount >= 2)
+			animator.SetLayerWeight(1, 1);
 	}
 	
 	// Update 
@@ -189,6 +195,7 @@ public class FlyerController : OVRComponent
 	// COnsolidate all movement code here
 	//
 	static float sDeltaRotationOld = 0.0f;
+	float ForwardSpeed = 0.0f, DirHori = 0.0f, DirVert = 0.0f;
 	public virtual void UpdateMovement()
 	{
 //		// Do not apply input if we are showing a level selection display
@@ -228,6 +235,32 @@ public class FlyerController : OVRComponent
 		    (moveBack && moveLeft)    || (moveBack && moveRight) )
 			MoveScale = 0.70710678f;
 
+		// Jude: Animator Controlling parameters
+		if (moveForward) {
+						ForwardSpeed = 0.4f;
+				} else {
+						if (moveBack) {
+								ForwardSpeed = -0.4f;
+						} else {
+								ForwardSpeed = 0.0f;
+						}
+				}
+		if (moveLeft) {
+						DirHori = -0.5f;
+				} else {
+						if (moveRight)
+								DirHori = 0.5f;
+						else 
+								DirHori = 0.0f;
+				}
+		if (moveUp) {
+			DirVert = 0.5f;
+		} else {
+			if (moveDown)
+				DirVert = -0.5f;
+			else 
+				DirVert = 0.0f;
+		}
 		// Jude: need change according to the dynamics
 		if (moveUp)
 						MoveScale *= 0.707f;
@@ -244,8 +277,13 @@ public class FlyerController : OVRComponent
 		float moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
 		
 		// Run!
-		if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-			moveInfluence *= 2.0f;
+		if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) {
+						moveInfluence *= 2.0f;
+						ForwardSpeed *= 2.0f;
+						DirHori *= 2.0f;
+						DirVert *= 2.0f;
+				}
+
 		
 		if(DirXform != null)
 		{
@@ -337,9 +375,17 @@ public class FlyerController : OVRComponent
 		
 		// Update cameras direction and rotation
 		SetCameras();
-		
+
+		SetAnimator (ForwardSpeed, DirHori, DirVert);
 	}
-	
+
+	void SetAnimator(float fs, float dh, float dv){
+		Debug.Log ("Set animator for: " + animator);
+		animator.SetFloat("ForwardSpeed", fs, 0.5f, Time.deltaTime);
+		animator.SetFloat("DirectionHorizontal", dh, .25f, Time.deltaTime);	
+		animator.SetFloat("DirectionVertical", dv, .25f, Time.deltaTime);	
+	}
+
 	// UpdatePlayerControllerRotation
 	// This function will be used to 'slide' PlayerController rotation around based on 
 	// CameraController. For now, we are simply copying the CameraController rotation into 
