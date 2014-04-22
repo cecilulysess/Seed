@@ -20,10 +20,13 @@ public class ControllerServer : MonoBehaviour {
 	private TcpListener listener;
 	const int CONN_LIMIT = 2;
 	private List<Thread> tp = new List<Thread>();
+	public delegate void UpdateDataDelegate(bool isLeft, double ax, double ay, double az);
+
+	public UpdateDataDelegate reporter;
 
 	// Use this for initialization
 	void Start () {
-		listener = new TcpListener (8080);
+		listener = new TcpListener (IPAddress.Parse("0.0.0.0"), 8080);
 		listener.Start ();
 		Debug.Log ("Server Listening on port 8080");
 		for (int i = 0; i < CONN_LIMIT; ++i) {
@@ -61,7 +64,10 @@ public class ControllerServer : MonoBehaviour {
 					accx = sr.ReadDouble();
 					accy = sr.ReadDouble();
 					accz = sr.ReadDouble();
-					Debug.Log ("Client isLeft:" + isLeft + ", xyz:" + accx + ", "+accy+ "," + accz);
+//					Debug.Log ("Client isLeft:" + isLeft + ", xyz:" + accx + ", "+accy+ "," + accz);
+					if (reporter!= null){
+						reporter(isLeft, accx, accy, accz);
+					}
 				}
 				s.Close();
 			} catch (Exception e) {
