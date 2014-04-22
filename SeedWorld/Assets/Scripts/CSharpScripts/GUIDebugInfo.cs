@@ -22,7 +22,7 @@ public class GUIDebugInfo : MonoBehaviour {
 	}
 
 	void UpdateData(bool isLeft, double ax, double ay, double az){
-		Debug.Log ("Input data:" + isLeft + ", " + ax);
+//		Debug.Log ("Input data:" + isLeft + ", " + ax);
 		if (isLeft) {
 			lax = ax;
 			lay = ay;
