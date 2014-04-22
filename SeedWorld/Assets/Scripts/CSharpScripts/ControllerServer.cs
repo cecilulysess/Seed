@@ -20,7 +20,7 @@ public class ControllerServer : MonoBehaviour {
 	private TcpListener listener;
 	const int CONN_LIMIT = 2;
 	private List<Thread> tp = new List<Thread>();
-	public delegate void UpdateDataDelegate(bool isLeft, double ax, double ay, double az);
+	public delegate void UpdateDataDelegate(bool isLeft, double ax, double ay, double az, double rx, double ry, double rz);
 
 	public UpdateDataDelegate reporter;
 
@@ -33,7 +33,6 @@ public class ControllerServer : MonoBehaviour {
 			Thread t = new Thread(new ThreadStart(Listening));
 			t.Start ();
 			tp.Add(t);
-
 		}
 		Debug.Log ("Start Server end");
 
@@ -46,7 +45,7 @@ public class ControllerServer : MonoBehaviour {
 
 	void Listening() {
 		bool isLeft;
-		double accx, accy, accz;
+		double accx, accy, accz, rx, ry, rz;
 		while (true) {
 			Socket so = listener.AcceptSocket();
 			Debug.Log("Connected: " + so.RemoteEndPoint);
@@ -64,9 +63,12 @@ public class ControllerServer : MonoBehaviour {
 					accx = sr.ReadDouble();
 					accy = sr.ReadDouble();
 					accz = sr.ReadDouble();
+					rx = sr.ReadDouble();
+					ry = sr.ReadDouble();
+					rz = sr.ReadDouble();
 //					Debug.Log ("Client isLeft:" + isLeft + ", xyz:" + accx + ", "+accy+ "," + accz);
 					if (reporter!= null){
-						reporter(isLeft, accx, accy, accz);
+						reporter(isLeft, accx, accy, accz, rx, ry, rz);
 					}
 				}
 				s.Close();
@@ -84,6 +86,19 @@ public class ControllerServer : MonoBehaviour {
 				t.Abort();
 		}
 		listener.Stop ();
+	}
+
+	public void StartServer(){
+		listener = new TcpListener (IPAddress.Parse("0.0.0.0"), 8080);
+		listener.Start ();
+		Debug.Log ("Server Listening on port 8080");
+		for (int i = 0; i < CONN_LIMIT; ++i) {
+			Thread t = new Thread(new ThreadStart(Listening));
+			t.Start ();
+			tp.Add(t);
+			
+		}
+		Debug.Log ("Start Server end");
 	}
 
 
