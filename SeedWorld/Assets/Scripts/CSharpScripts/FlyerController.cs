@@ -69,6 +69,8 @@ public class FlyerController : OVRComponent
 
 	// Jude: Is the user is flying
 	public bool IsFlying = false;
+
+	public PostureController PostureStates;
 	// * * * * * * * * * * * * *
 	protected Animator animator;
 	
@@ -215,9 +217,9 @@ public class FlyerController : OVRComponent
 		// Keyboard input
 		
 		// Move
-		
+		Debug.Log("PC.MoveForward is: " + PostureController.MoveForward);
 		// WASD
-		if (Input.GetKey(KeyCode.W)) moveForward = true;
+		if (Input.GetKey(KeyCode.W) || PostureController.MoveForward) moveForward = true;
 		if (Input.GetKey(KeyCode.A)) moveLeft	 = true;
 		if (Input.GetKey(KeyCode.S)) moveBack 	 = true; 
 		if (Input.GetKey(KeyCode.D)) moveRight 	 = true; 
@@ -225,11 +227,11 @@ public class FlyerController : OVRComponent
 						moveUp = true;
 		if (Input.GetKey (KeyCode.E))
 						moveDown = true;
-		// Arrow keys
-		if (Input.GetKey(KeyCode.UpArrow))    moveForward = true;
-		if (Input.GetKey(KeyCode.LeftArrow))  moveLeft 	  = true;
-		if (Input.GetKey(KeyCode.DownArrow))  moveBack 	  = true; 
-		if (Input.GetKey(KeyCode.RightArrow)) moveRight   = true; 
+//		// Arrow keys
+//		if (Input.GetKey(KeyCode.UpArrow) || PostureStates.MoveForward)    moveForward = true;
+//		if (Input.GetKey(KeyCode.LeftArrow))  moveLeft 	  = true;
+//		if (Input.GetKey(KeyCode.DownArrow))  moveBack 	  = true; 
+//		if (Input.GetKey(KeyCode.RightArrow)) moveRight   = true; 
 		
 		if ( (moveForward && moveLeft) || (moveForward && moveRight) ||
 		    (moveBack && moveLeft)    || (moveBack && moveRight) )
