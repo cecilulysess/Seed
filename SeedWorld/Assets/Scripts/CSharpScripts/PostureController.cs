@@ -35,7 +35,11 @@ public class PostureController : MonoBehaviour {
 	private static bool isStartFlying;
 
 	private static long initAnimationWaitCount;
-	private static long KWAITINGCOUNT = 200000000;
+	private static long turningCount;
+	private static readonly long KWAITINGCOUNT = 400000000;
+	private static readonly long KTURNWAITCOUNT = 200000000;
+
+	private static double turning_threshold = 1.5;
 
 	private double lax, lay, laz, rax,ray, raz, lrx, lry, lrz, rrx, rry, rrz;
 
@@ -172,7 +176,24 @@ public class PostureController : MonoBehaviour {
 				PostureController.MoveForward = false;
 				return IdleState.Instance;
 			}
-			//if (rotz < )
+			if (roty > PostureController.turning_threshold) {
+				if (PostureController.turning_threshold > 2.0) {
+					PostureController.turning_threshold /= 2;
+				}
+				Debug.Log("Detect Rotate left");
+				PostureController.MoveRight = false;
+				PostureController.MoveLeft = true;
+				return TurnLeftState.Instance;
+			}
+			if (roty < -PostureController.turning_threshold) {
+				if (PostureController.turning_threshold > 2.0) {
+					PostureController.turning_threshold /= 2;
+				}
+				Debug.Log("Detect Rotate right from idle");
+				PostureController.MoveLeft = false;
+				PostureController.MoveRight = true;
+				return TurnRightState.Instance;
+			}
 //			PostureController.MoveForward = false;
 			return Instance;
 		}
@@ -196,13 +217,25 @@ public class PostureController : MonoBehaviour {
 //			PostureController.MoveLeft = false;
 //			PostureController.MoveUp = false;
 //			PostureController.MoveRight = false;
-			
-			if (accz  > 0.25) {
-				cnt ++;
+//			
+			if (accz > 0.35) {
 				Debug.Log(string.Format("Detect stop z axis triggered {0} times", cnt));
 				PostureController.MoveForward = false;
+				PostureController.MoveLeft = false;
 				return IdleState.Instance;
 			}
+			if (roty < -PostureController.turning_threshold) {
+				Debug.Log("Detect Rotate to normal");
+				PostureController.MoveLeft = false;
+				while(PostureController.turningCount++ < PostureController.KTURNWAITCOUNT);
+				PostureController.turningCount = 0;
+				Debug.Log("\tTurn back to normal done");
+				PostureController.turning_threshold *= 2;
+				return NormalForwardState.Instance;
+			}
+
+
+			
 //			PostureController.MoveForward = false;
 			return Instance;
 		}
@@ -210,4 +243,46 @@ public class PostureController : MonoBehaviour {
 		public string ToString() {return "TurnLeft State";}
 	}
 
+
+	/// Thread safe implementation of singleton state
+	sealed class TurnRightState : ILocomotionState {
+		private TurnRightState(){}
+		public static TurnRightState Instance { get {return Nested.instance;} }
+		private int cnt = 0;
+		private class Nested {
+			static Nested() {}
+			internal static readonly TurnRightState instance = new TurnRightState();
+		}
+
+		public ILocomotionState Next(double accx, double accy, double accz, double rotx, double roty, double rotz) {
+//			PostureController.MoveForward = false;
+//			PostureController.MoveDown = false;
+//			PostureController.MoveLeft = false;
+//			PostureController.MoveUp = false;
+//			PostureController.MoveRight = false;
+//			
+			if (accz > 0.35) {
+				Debug.Log(string.Format("Detect stop z axis triggered {0} times", cnt));
+				PostureController.MoveForward = false;
+				PostureController.MoveRight = false;
+				return IdleState.Instance;
+			}
+			if (roty > turning_threshold) {
+				Debug.Log("Detect Rotate to normal");
+				PostureController.MoveRight = false;
+				while(PostureController.turningCount++ < PostureController.KTURNWAITCOUNT);
+				PostureController.turningCount = 0;
+				Debug.Log("\tTurn back to normal done");
+				PostureController.turning_threshold *= 2;
+				return NormalForwardState.Instance;
+			}
+
+
+			
+//			PostureController.MoveForward = false;
+			return Instance;
+		}
+
+		public string ToString() {return "TurnLeft State";}
+	}
 }

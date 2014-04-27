@@ -220,9 +220,9 @@ public class FlyerController : OVRComponent
 		Debug.Log("PC.MoveForward is: " + PostureController.MoveForward);
 		// WASD
 		if (Input.GetKey(KeyCode.W) || PostureController.MoveForward) moveForward = true;
-		if (Input.GetKey(KeyCode.A)) moveLeft	 = true;
+		if (Input.GetKey(KeyCode.A) || PostureController.MoveLeft) moveLeft	 = true;
 		if (Input.GetKey(KeyCode.S)) moveBack 	 = true; 
-		if (Input.GetKey(KeyCode.D)) moveRight 	 = true; 
+		if (Input.GetKey(KeyCode.D) || PostureController.MoveRight ) moveRight 	 = true; 
 		if (Input.GetKey (KeyCode.Q))
 						moveUp = true;
 		if (Input.GetKey (KeyCode.E))
