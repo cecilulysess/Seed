@@ -6,10 +6,13 @@ public class GUIDebugInfo : MonoBehaviour {
 	public GUIStyle guiskin;
 
 	private double lax, lay, laz, rax,ray, raz, lrx, lry, lrz, rrx, rry, rrz;
+
+	private PostureController pc;
 	// Use this for initialization
 	void Start () {
 		ControllerServer cs = this.transform.GetComponent<ControllerServer> ();
 		cs.reporter += UpdateData;
+		pc = this.transform.GetComponent<PostureController>();
 	}
 	
 	// Update is called once per frame
@@ -42,7 +45,7 @@ public class GUIDebugInfo : MonoBehaviour {
 
 	void OnGUI(){
 			if (ShowDebug) {
-					GUILayout.BeginArea (new Rect (10, Screen.height - 170, 250, 160), guiskin);
+					GUILayout.BeginArea (new Rect (10, Screen.height - 190, 250, 180), guiskin);
 					GUILayout.BeginVertical ();
 					GUILayout.Label ("Controller Left:");
 					GUILayout.BeginHorizontal ();
@@ -64,11 +67,12 @@ public class GUIDebugInfo : MonoBehaviour {
 					GUILayout.Label (string.Format("[{0:F3}, {1:F3}, {2:F3}]", rrx, rry, rrz));
 					GUILayout.EndHorizontal ();
 		
-					GUILayout.BeginHorizontal ();
-					GUILayout.Label ("Calculated Control Action: ");
-					GUILayout.Label ("[" + 2 + "]");
+					
+			GUILayout.BeginHorizontal ();
+					GUILayout.Label ("Current State: ");
+					GUILayout.Label (pc.State.ToString());
 					GUILayout.EndHorizontal ();
-					GUILayout.EndVertical ();
+			GUILayout.EndVertical ();
 					GUILayout.EndArea ();
 			}
 	}

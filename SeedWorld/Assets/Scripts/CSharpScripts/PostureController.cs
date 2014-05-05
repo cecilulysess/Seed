@@ -13,6 +13,12 @@ public interface ILocomotionState{
  * 
  */
 public class PostureController : MonoBehaviour {
+	public AudioClip bgm;
+	public AudioClip normal;
+	public AudioClip fastflying;
+	private static bool clipchanged;
+
+	public static bool FastForward;
 	public static bool MoveForward;
 
 	public static bool MoveLeft;
@@ -52,17 +58,36 @@ public class PostureController : MonoBehaviour {
 	public OnStateChange StateChanged;
 
 	private FlyerController fc;
+
+	private AudioSource asc;
+	private ILocomotionState newstate;
 	// Use this for initialization
 	void Start () {
 		ControllerServer cs = this.transform.GetComponent<ControllerServer> ();
 		cs.reporter += UpdateData;
 		state = StandbyState.Instance;
 		fc = transform.GetComponent<FlyerController>();
+		asc = transform.GetComponent<AudioSource>();
+		asc.clip = bgm;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (clipchanged) {
+			clipchanged = false;
+			if (newstate is FastForwardState){
+				asc.clip = fastflying;
+			} else {
+				if (newstate is IdleState) {
+					asc.clip = bgm;
+				} else {
+					asc.clip = normal;
+				}
+			}
+			asc.Play();
+			Debug.Log("Is the audio playing: " + asc.isPlaying);
+		}
+
 	}
 
 	void UpdateData(bool isLeft, double ax, double ay, double az, double rx, double ry, double rz){
@@ -83,11 +108,13 @@ public class PostureController : MonoBehaviour {
 			rrz = rz;
 		}
 
-		ILocomotionState newstate = this.state.Next(lax, lay, laz, lrx, lry, lrz);
+		newstate = this.state.Next(lax, lay, laz, lrx, lry, lrz);
 
 		if (newstate != state) {
+			clipchanged = true;
 			Debug.Log("Changing to new state: " + newstate.ToString());
 			if (newstate is NormalForwardState) {
+
 				Debug.Log("Enable flying");
 				fc.IsFlying = true;
 			} 
@@ -140,7 +167,7 @@ public class PostureController : MonoBehaviour {
 			PostureController.MoveUp = false;
 			PostureController.MoveRight = false;
 
-			if (accz < -0.35) {
+			if (accz < -0.28) {
 				cnt ++;
 				PostureController.MoveForward = true;
 				Debug.Log("Set moving forward");
@@ -170,7 +197,12 @@ public class PostureController : MonoBehaviour {
 //			PostureController.MoveUp = false;
 //			PostureController.MoveRight = false;
 			
-			if (accz  > 0.25) {
+			if (accz < -0.5 && System.Math.Abs(rotx) < 1.0) {
+				Debug.Log("Detect FastForward form normal");
+				PostureController.FastForward = true;
+				return FastForwardState.Instance;
+			}
+			if (accz  > 0.25 && System.Math.Abs(rotx) < 1.0) {
 				cnt ++;
 				Debug.Log(string.Format("Detect stop z axis triggered {0} times", cnt));
 				PostureController.MoveForward = false;
@@ -193,6 +225,23 @@ public class PostureController : MonoBehaviour {
 				PostureController.MoveLeft = false;
 				PostureController.MoveRight = true;
 				return TurnRightState.Instance;
+			}
+
+			if (rotx > 2.0) {
+				Debug.Log("Detect Turn Up from idle");
+				PostureController.MoveLeft = false;
+				PostureController.MoveRight = false;
+				PostureController.MoveUp = true;
+
+			}
+
+			if (rotx < -3.0) {
+				Debug.Log("Detect Turn down from idle");
+				PostureController.MoveLeft = false;
+				PostureController.MoveRight = false;
+				PostureController.MoveDown = true;
+				PostureController.MoveUp = false;
+
 			}
 //			PostureController.MoveForward = false;
 			return Instance;
@@ -227,8 +276,8 @@ public class PostureController : MonoBehaviour {
 			if (roty < -PostureController.turning_threshold) {
 				Debug.Log("Detect Rotate to normal");
 				PostureController.MoveLeft = false;
-				while(PostureController.turningCount++ < PostureController.KTURNWAITCOUNT);
-				PostureController.turningCount = 0;
+//				while(PostureController.turningCount++ < PostureController.KTURNWAITCOUNT);
+//				PostureController.turningCount = 0;
 				Debug.Log("\tTurn back to normal done");
 				PostureController.turning_threshold *= 2;
 				return NormalForwardState.Instance;
@@ -270,8 +319,8 @@ public class PostureController : MonoBehaviour {
 			if (roty > turning_threshold) {
 				Debug.Log("Detect Rotate to normal");
 				PostureController.MoveRight = false;
-				while(PostureController.turningCount++ < PostureController.KTURNWAITCOUNT);
-				PostureController.turningCount = 0;
+//				while(PostureController.turningCount++ < PostureController.KTURNWAITCOUNT);
+//				PostureController.turningCount = 0;
 				Debug.Log("\tTurn back to normal done");
 				PostureController.turning_threshold *= 2;
 				return NormalForwardState.Instance;
@@ -283,6 +332,130 @@ public class PostureController : MonoBehaviour {
 			return Instance;
 		}
 
-		public string ToString() {return "TurnLeft State";}
+		public string ToString() {return "TurnRight State";}
+	}
+
+		/// Thread safe implementation of singleton state
+	sealed class TurnUpState : ILocomotionState {
+		private TurnUpState(){}
+		public static TurnUpState Instance { get {return Nested.instance;} }
+		private int cnt = 0;
+		private class Nested {
+			static Nested() {}
+			internal static readonly TurnUpState instance = new TurnUpState();
+		}
+
+		public ILocomotionState Next(double accx, double accy, double accz, double rotx, double roty, double rotz) {
+//			PostureController.MoveForward = false;
+//			PostureController.MoveDown = false;
+//			PostureController.MoveLeft = false;
+//			PostureController.MoveUp = false;
+//			PostureController.MoveRight = false;
+//			
+			if (accz > 0.35) {
+				Debug.Log(string.Format("Detect stop up triggered {0} times", cnt));
+				PostureController.MoveForward = false;
+				PostureController.MoveRight = false;
+				return IdleState.Instance;
+			}
+			if (roty > turning_threshold) {
+				Debug.Log("Detect turn to normal from up");
+				PostureController.MoveUp = false;
+//				while(PostureController.turningCount++ < PostureController.KTURNWAITCOUNT);
+//				PostureController.turningCount = 0;
+				Debug.Log("\tTurn back to normal done");
+				return NormalForwardState.Instance;
+			}
+
+
+			
+//			PostureController.MoveForward = false;
+			return Instance;
+		}
+
+		public string ToString() {return "TurnUp State";}
+	}
+
+	/// Thread safe implementation of singleton state
+	sealed class TurnDownState : ILocomotionState {
+		private TurnDownState(){}
+		public static TurnDownState Instance { get {return Nested.instance;} }
+		private int cnt = 0;
+		private class Nested {
+			static Nested() {}
+			internal static readonly TurnDownState instance = new TurnDownState();
+		}
+
+		public ILocomotionState Next(double accx, double accy, double accz, double rotx, double roty, double rotz) {
+//			PostureController.MoveForward = false;
+//			PostureController.MoveDown = false;
+//			PostureController.MoveLeft = false;
+//			PostureController.MoveUp = false;
+//			PostureController.MoveRight = false;
+//			
+			if (accz > 0.35) {
+				Debug.Log(string.Format("Detect stop up triggered {0} times", cnt));
+				PostureController.MoveForward = false;
+				PostureController.MoveDown = false;
+				return IdleState.Instance;
+			}
+			if (roty > turning_threshold) {
+				Debug.Log("Detect turn to normal from down");
+				PostureController.MoveDown = false;
+//				while(PostureController.turningCount++ < PostureController.KTURNWAITCOUNT);
+//				PostureController.turningCount = 0;
+				Debug.Log("\tTurn back to normal done");
+				return NormalForwardState.Instance;
+			}
+
+
+			
+//			PostureController.MoveForward = false;
+			return Instance;
+		}
+
+		public string ToString() {return "TurnDown State";}
+	}
+
+
+	/// Thread safe implementation of singleton state
+	sealed class FastForwardState : ILocomotionState {
+		private FastForwardState(){}
+		public static FastForwardState Instance { get {return Nested.instance;} }
+		private int cnt = 0;
+		private class Nested {
+			static Nested() {}
+			internal static readonly FastForwardState instance = new FastForwardState();
+		}
+
+		public ILocomotionState Next(double accx, double accy, double accz, double rotx, double roty, double rotz) {
+//			PostureController.MoveForward = false;
+//			PostureController.MoveDown = false;
+//			PostureController.MoveLeft = false;
+//			PostureController.MoveUp = false;
+//			PostureController.MoveRight = false;
+//			
+			if (accz > 0.45) {
+				Debug.Log(string.Format("Detect stop moving up triggered {0} times", cnt));
+				PostureController.MoveForward = false;
+				PostureController.MoveUp = false;
+				PostureController.FastForward = false;
+				return IdleState.Instance;
+			}
+			
+			if (accz > 0.3) {
+				Debug.Log("Detect go back to NormalForward form fast");
+				PostureController.FastForward = false;
+				return NormalForwardState.Instance;
+
+			}
+
+
+			
+//			PostureController.MoveForward = false;
+			return Instance;
+		}
+
+		public string ToString() {return "FastForward State";}
 	}
 }

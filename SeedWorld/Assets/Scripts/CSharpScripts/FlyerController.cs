@@ -223,9 +223,9 @@ public class FlyerController : OVRComponent
 		if (Input.GetKey(KeyCode.A) || PostureController.MoveLeft) moveLeft	 = true;
 		if (Input.GetKey(KeyCode.S)) moveBack 	 = true; 
 		if (Input.GetKey(KeyCode.D) || PostureController.MoveRight ) moveRight 	 = true; 
-		if (Input.GetKey (KeyCode.Q))
+		if (Input.GetKey (KeyCode.Q) || PostureController.MoveUp)
 						moveUp = true;
-		if (Input.GetKey (KeyCode.E))
+		if (Input.GetKey (KeyCode.E) || PostureController.MoveDown)
 						moveDown = true;
 //		// Arrow keys
 //		if (Input.GetKey(KeyCode.UpArrow) || PostureStates.MoveForward)    moveForward = true;
@@ -279,7 +279,7 @@ public class FlyerController : OVRComponent
 		float moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
 		
 		// Run!
-		if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) {
+		if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift) || PostureController.FastForward) {
 						moveInfluence *= 4.0f;
 						ForwardSpeed *= 2.0f;
 						DirHori *= 2.0f;
